@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3caf2046-c831-4fa3-9095-47f01a99e938" name="Default" comment="" />
+    <list default="true" id="3caf2046-c831-4fa3-9095-47f01a99e938" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="iirc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queue.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="queue.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iirc/queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.34741145" vertical-offset="0" max-vertical-offset="734">
+            <state line="17" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="230" column="66" selection-start="12446" selection-end="12446" vertical-scroll-proportion="0.52997273" vertical-offset="3061" max-vertical-offset="4260">
               <folding />
             </state>
           </provider>
@@ -48,11 +61,20 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/iirc/queue.py" />
         <option value="$PROJECT_DIR$/iirc/__init__.py" />
+        <option value="$PROJECT_DIR$/LICENSE" />
       </list>
     </option>
   </component>
@@ -61,7 +83,7 @@
     <option name="width" value="1928" />
     <option name="height" value="1083" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -101,6 +123,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="&lt; Python 3.2.5 (/usr/bin/python3) &gt;" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iirc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iirc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -366,7 +398,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iirc/queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.34741145" vertical-offset="0" max-vertical-offset="734">
+        <state line="17" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="66" selection-start="12446" selection-end="12446" vertical-scroll-proportion="0.52997273" vertical-offset="3061" max-vertical-offset="4260">
           <folding />
         </state>
       </provider>
