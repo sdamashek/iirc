@@ -23,18 +23,23 @@ from .lib import identify
 
 
 class Client:
-    def __init__(self, nick="iircBot", server="chat.freenode.net", port=6667, ident=None, ssl=False, ipv6=False):
+    def __init__(self, nick="iirc_bot", server="chat.freenode.net", port=6667,
+                 ident="iirc", realname="IIRC - Improved IRC", nickserv=None,
+                 server_pass=None, ssl=False, ipv6=False):
         self.nick = nick
         self.server = server
         self.port = port
         self.ssl = ssl
         self.ident = ident
+        self.realname = realname
+        self.nickserv = nickserv
+        self.server_pass = server_pass
         self.ipv6 = ipv6
         self.listeners = []
 
     def start(self):
         """
-        Starts the IRC bot.
+        Starts the IRC client.
         """
         if self.ipv6:
             self.s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
@@ -45,13 +50,29 @@ class Client:
         s = self.s
         s.connect((self.server, self.port))
 
+        # send USER and NICK to the server
+        self.register()
+
         if self.ssl:
             self.s = ssl.wrap_socket(s)
 
-        if self.ident:
-            identify(s, self.ident) # Identify to services
+        if self.nickserv is not None:
+            identify(s, self.nickserv) # Identify to services
 
         listen(s) # Call the listen function to start listening on the socket
+
+    def register(self):
+        """
+        Register with the IRC server.
+        - Send a PASS command, if applicable.
+        - Send a USER command: USER ident ident ident :realname
+        - Send a NICK command: NICK nickname
+        """
+        if self.server_pass:
+            self.s.send("PASS %s\n" % self.server_pass)
+        self.s.send("USER %s %s %s :%s\n" % (self.ident, self.ident,
+                                             self.ident, self.real_name))
+        self.s.send("NICK %s\n" % self.nick)
 
     def on(self, event, c):
         l = Callback(event, c)
