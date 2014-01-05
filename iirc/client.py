@@ -59,7 +59,7 @@ class Client:
         if self.nickserv is not None:
             identify(s, self.nickserv) # Identify to services
 
-        listen(s) # Call the listen function to start listening on the socket
+        listen(s, self.listeners) # Call the listen function to start listening on the socket
 
     def register(self):
         """
